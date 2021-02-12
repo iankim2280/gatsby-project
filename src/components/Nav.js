@@ -29,21 +29,21 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  {title: "about us", path: "/about-us"},
-  {title: "product", path: "/product"},
-  {title: "blog", path: "/blog"},
+  {title: "about me", path: "/about-me"},
+  {title: "projects", path: "/projects"},
   {title: "contact", path: "/contact"},
-  {title: "faq", path: "/faq"},
 ];
 
 const Nav = () => {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="Header">
       <Toolbar>
         <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
           <IconButton edge="start" color="inherit" aria-label="home">
-            <Home fontSize="large" />
+            <Link href="/" className="whiteLink">
+              <Home fontSize="large" />
+            </Link>
           </IconButton>
           <List
             component="nav"
@@ -51,11 +51,11 @@ const Nav = () => {
             className={classes.navDisplayFlex}
           >
             {navLinks.map(({title, path}) => (
-              <a href={path} key={title} className={classes.linkText}>
+              <Link href={path} key={title} className={classes.linkText}>
                 <ListItem button>
                   <ListItemText primary={title} />
                 </ListItem>
-              </a>
+              </Link>
             ))}
           </List>
         </Container>
