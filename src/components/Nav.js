@@ -28,11 +28,7 @@ const useStyles = makeStyles({
   },
 });
 
-const navLinks = [
-  {title: "about me", path: "/about-me"},
-  {title: "projects", path: "/projects"},
-  {title: "contact", path: "/contact"},
-];
+const navLinks = [{title: "contact", path: "/contact"}];
 
 const Nav = () => {
   const classes = useStyles();
