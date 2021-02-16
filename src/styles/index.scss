@@ -1,4 +1,8 @@
+// Google fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 html {
   body {
     margin: 0 auto;
@@ -34,12 +38,12 @@ html {
     }
   }
   .divCard2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
     .myInfo1 {
       padding: 30px;
-      grid-area: 1 / 1 / 2 / 2;
+      // grid-area: 1 / 1 / 2 / 2;
       img {
         display: block;
         margin: 0 auto;
@@ -47,10 +51,7 @@ html {
     }
     .myInfo2 {
       padding: 30px;
-      width: 80%;
-
-      grid-area: 1 / 2 / 2 / 3;
-      margin: 0 auto;
+      width: 50%;
       ul {
         li {
           list-style: none;
@@ -136,26 +137,25 @@ html {
   text-align: center;
   margin: 150px;
   height: 60vh;
-  background-color: rgba(61, 57, 57, 0.418);
+  background-color: rgba(100, 100, 146, 0.418);
   h1 {
-    padding-top: 50px;
+    padding-top: 150px;
   }
+}
+// contact
+.ptSansFont {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1em;
+}
+.ubuntuFont {
+  font-family: "Ubuntu", sans-serif;
 }
 @media only screen and (max-width: 920px) {
   .aboutPageStyles {
     .divCard1 {
+      padding: 30px;
       h1 {
         margin-bottom: 70px;
-      }
-    }
-    .divCard2 {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      .myInfo1 {
-        grid-area: 1 / 1 / 2 / 2;
-      }
-      .myInfo2 {
-        grid-area: 2 / 1 / 3 / 2;
       }
     }
   }
@@ -163,5 +163,29 @@ html {
   .projectStyles {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+  }
+
+  .blogPost {
+    margin: 100px;
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutPageStyles {
+    .divCard1 {
+      padding: 0px;
+    }
+    .divCard2 {
+      flex-direction: column;
+      .myInfo2 {
+        padding: 30px;
+        width: 100%;
+      }
+    }
+  }
+  .blogPost {
+    margin: 50px;
+    height: 50vh;
   }
 }
