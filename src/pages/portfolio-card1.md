@@ -1,6 +1,5 @@
 ---
 title: "Paint JS"
-date: "2017-08-21"
 ---
 
 This project was built with JavaScript.

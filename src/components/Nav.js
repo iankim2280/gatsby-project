@@ -28,7 +28,10 @@ const useStyles = makeStyles({
   },
 });
 
-const navLinks = [{title: "contact", path: "/contact"}];
+const navLinks = [
+  {title: "work", path: "/"},
+  {title: "contact", path: "/contact"},
+];
 
 const Nav = () => {
   const classes = useStyles();
