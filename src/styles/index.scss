@@ -119,10 +119,14 @@ html {
   .centerText {
     text-align: center;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(126, 26, 26);
     h3 {
       display: none;
-      font-size: 2rem;
-      margin-top: 40px;
+      font-size: 2.5rem;
+      // margin-top: 40px;
     }
   }
 
@@ -138,9 +142,11 @@ html {
   margin: 150px;
   height: 60vh;
   background-color: rgba(100, 100, 146, 0.418);
-  h1 {
-    padding-top: 150px;
-  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 // contact
 .ptSansFont {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
-import {Link} from "gatsby";
+// import {Link} from "gatsby";
 
 const Wrapper = styled.section`
   padding-top: 100px;

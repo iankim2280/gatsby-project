@@ -2,6 +2,6 @@
 title: "Paint JS"
 ---
 
-This project was built with JavaScript.
+This Painting board made with Vanilla JS, HTML Canvas.
 
-<a href="https://github.com/iankim2280/node-react">Link</a>
+You can check live site and codes <a href="https://github.com/iankim2280/paintjs">Here</a>
